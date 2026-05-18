@@ -1,6 +1,7 @@
+/* pages/category/category.wxss */
 .category-tabs { display: flex; flex-wrap: wrap; padding: 20rpx; gap: 16rpx; background: #1a1a2e; }
-.tab { display: flex; align-items: center; gap: 8rpx; padding: 14rpx 24rpx; border-radius: 50rpx; background: #16213e; border: 1px solid rgba(255,255,255,0.08); }
-.tab.active { background: rgba(100, 255, 218, 0.15); border-color: #64ffda; }
+.tab { display: flex; align-items: center; gap: 8rpx; padding: 14rpx 24rpx; border-radius: 50rpx; background: #16213e; border: 1px solid rgba(255,255,255,0.08); transition: all 0.2s; }
+.tab.active { background: rgba(100,255,218,0.15); border-color: #64ffda; }
 .tab-icon { font-size: 28rpx; }
 .tab-name { font-size: 26rpx; color: #e6e6e6; }
 .tab-count { font-size: 22rpx; color: #8892b0; background: rgba(255,255,255,0.08); padding: 2rpx 10rpx; border-radius: 20rpx; }
@@ -16,4 +17,6 @@
 .tool-cat { font-size: 22rpx; }
 .tool-rating { display: flex; align-items: center; gap: 8rpx; font-size: 22rpx; color: #ffd700; }
 .dot { color: #8892b0; }
-.empty { text-align: center; padding: 100rpx 0; color: #8892b0; font-size: 28rpx; }
+.empty { display: flex; flex-direction: column; align-items: center; padding: 100rpx 0; gap: 16rpx; }
+.empty-icon { font-size: 80rpx; }
+.empty-text { font-size: 28rpx; color: #8892b0; }

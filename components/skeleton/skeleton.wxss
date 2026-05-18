@@ -1,0 +1,161 @@
+/* 骨架屏动画 */
+.skeleton { padding: 0; }
+
+/* 通用骨架块：圆形 / 圆角矩形 */
+.sk-bg {
+  background: linear-gradient(90deg, #1a1a2e 25%, #243b55 50%, #1a1a2e 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+  border-radius: 8rpx;
+}
+@keyframes skeleton-loading {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ── Banner ── */
+.sk-banner {
+  height: 200rpx;
+  margin: 20rpx 30rpx;
+  border-radius: 16rpx;
+  background: linear-gradient(90deg, #1a1a2e 25%, #243b55 50%, #1a1a2e 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+}
+
+/* ── 标签横滑 ── */
+.sk-tags {
+  display: flex;
+  overflow: hidden;
+  padding: 20rpx 30rpx;
+  gap: 16rpx;
+}
+.sk-tag {
+  min-width: 100rpx;
+  height: 80rpx;
+  border-radius: 20rpx;
+  background: linear-gradient(90deg, #1a1a2e 25%, #243b55 50%, #1a1a2e 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+  flex-shrink: 0;
+}
+
+/* ── 宫格 ── */
+.sk-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20rpx;
+  gap: 20rpx;
+}
+.sk-card {
+  width: calc(50% - 20rpx);
+  padding: 24rpx;
+  border-radius: 16rpx;
+  background: #1a1a2e;
+  border: 1px solid rgba(100, 255, 218, 0.08);
+}
+.sk-card-img {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 16rpx;
+  margin-bottom: 14rpx;
+  background: linear-gradient(90deg, #1a1a2e 25%, #243b55 50%, #1a1a2e 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+}
+.sk-card-title {
+  height: 32rpx;
+  width: 70%;
+  margin-bottom: 10rpx;
+  border-radius: 8rpx;
+  background: linear-gradient(90deg, #1a1a2e 25%, #243b55 50%, #1a1a2e 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+}
+.sk-card-text {
+  height: 24rpx;
+  width: 90%;
+  border-radius: 8rpx;
+  background: linear-gradient(90deg, #1a1a2e 25%, #243b55 50%, #1a1a2e 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+}
+
+/* ── 列表 ── */
+.sk-list { padding: 20rpx 30rpx; }
+.sk-item {
+  display: flex;
+  gap: 24rpx;
+  padding: 24rpx 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.sk-item-img {
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 20rpx;
+  flex-shrink: 0;
+  background: linear-gradient(90deg, #1a1a2e 25%, #243b55 50%, #1a1a2e 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+}
+.sk-item-body { flex: 1; }
+.sk-item-title {
+  height: 30rpx;
+  width: 50%;
+  margin-bottom: 12rpx;
+  border-radius: 8rpx;
+  background: linear-gradient(90deg, #1a1a2e 25%, #243b55 50%, #1a1a2e 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+}
+.sk-item-text {
+  height: 24rpx;
+  width: 80%;
+  border-radius: 8rpx;
+  background: linear-gradient(90deg, #1a1a2e 25%, #243b55 50%, #1a1a2e 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+}
+
+/* ── 详情 ── */
+.sk-detail { padding: 30rpx; }
+.sk-detail-header {
+  display: flex;
+  gap: 30rpx;
+  margin-bottom: 30rpx;
+}
+.sk-detail-img {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 28rpx;
+  flex-shrink: 0;
+  background: linear-gradient(90deg, #1a1a2e 25%, #243b55 50%, #1a1a2e 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+}
+.sk-detail-info { flex: 1; padding-top: 10rpx; }
+.sk-detail-title {
+  height: 40rpx;
+  width: 60%;
+  margin-bottom: 16rpx;
+  border-radius: 8rpx;
+  background: linear-gradient(90deg, #1a1a2e 25%, #243b55 50%, #1a1a2e 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+}
+.sk-detail-sub {
+  height: 28rpx;
+  width: 40%;
+  border-radius: 8rpx;
+  background: linear-gradient(90deg, #1a1a2e 25%, #243b55 50%, #1a1a2e 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+}
+.sk-block {
+  height: 120rpx;
+  border-radius: 16rpx;
+  margin-bottom: 20rpx;
+  background: linear-gradient(90deg, #1a1a2e 25%, #243b55 50%, #1a1a2e 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+}

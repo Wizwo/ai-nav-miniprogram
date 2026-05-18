@@ -1,0 +1,44 @@
+<!-- 骨架屏组件：纯渐变动画，无数据时占位 -->
+<view class="skeleton {{cls}}" wx:if="{{show}}">
+
+  <!-- Banner骨架 -->
+  <view class="sk-banner" wx:if="{{type === 'home'}}"></view>
+
+  <!-- 分类横滑骨架 -->
+  <view class="sk-tags" wx:if="{{type === 'home'}}">
+    <view class="sk-tag" wx:for="{{5}}" wx:key="index"></view>
+  </view>
+
+  <!-- 宫格骨架（2列） -->
+  <view class="sk-grid" wx:if="{{type === 'grid'}}">
+    <view class="sk-card" wx:for="{{6}}" wx:key="index">
+      <view class="sk-card-img"></view>
+      <view class="sk-card-title"></view>
+      <view class="sk-card-text"></view>
+    </view>
+  </view>
+
+  <!-- 列表骨架 -->
+  <view class="sk-list" wx:if="{{type === 'list'}}">
+    <view class="sk-item" wx:for="{{5}}" wx:key="index">
+      <view class="sk-item-img"></view>
+      <view class="sk-item-body">
+        <view class="sk-item-title"></view>
+        <view class="sk-item-text"></view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 详情骨架 -->
+  <view class="sk-detail" wx:if="{{type === 'detail'}}">
+    <view class="sk-detail-header">
+      <view class="sk-detail-img"></view>
+      <view class="sk-detail-info">
+        <view class="sk-detail-title"></view>
+        <view class="sk-detail-sub"></view>
+      </view>
+    </view>
+    <view class="sk-block" wx:for="{{3}}" wx:key="index"></view>
+  </view>
+
+</view>
