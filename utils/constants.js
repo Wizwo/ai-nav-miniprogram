@@ -38,7 +38,7 @@ module.exports = {
   },
 
   // ── API 配置 ──
-  API_BASE: 'https://api.example.com',
+  API_BASE: 'https://www.aiux.top',
   API_TIMEOUT: 10000,
 
   // ── 缓存 Key & TTL（秒）──

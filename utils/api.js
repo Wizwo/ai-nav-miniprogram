@@ -11,7 +11,7 @@ const { get: httpGet } = require('./request.js')
 // 真实接口（项目接入时取消注释并填入真实地址）
 // ──────────────────────────────────────────────────
 // const BASE = 'https://your-api.com'   // 真实 API 地址
-const USE_MOCK = true                    // 调试阶段用 Mock，正式上线改为 false
+const USE_MOCK = false                   // 调试阶段用 Mock，正式上线改为 false
 
 // ──────────────────────────────────────────────────
 // Mock 数据（与 ai_tools.js 同步维护，这里聚合完整字段）
