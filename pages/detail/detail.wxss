@@ -1,0 +1,28 @@
+.detail-header { display: flex; gap: 30rpx; padding: 40rpx 30rpx; background: linear-gradient(135deg, #1a1a2e, #16213e); border-bottom: 1px solid rgba(255,255,255,0.05); }
+.detail-logo { width: 120rpx; height: 120rpx; border-radius: 28rpx; background: #0f0f1a; flex-shrink: 0; }
+.header-info { flex: 1; display: flex; flex-direction: column; gap: 10rpx; }
+.detail-name { font-size: 40rpx; font-weight: 700; color: #e6e6e6; }
+.detail-badges { display: flex; gap: 10rpx; flex-wrap: wrap; }
+.detail-rating { display: flex; align-items: center; gap: 10rpx; }
+.stars { font-size: 24rpx; letter-spacing: 2rpx; }
+.rating-num { font-size: 26rpx; color: #ffd700; font-weight: 600; }
+.rating-users { font-size: 22rpx; color: #8892b0; }
+.detail-section { padding: 30rpx; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.section-title { font-size: 30rpx; font-weight: 600; color: #e6e6e6; display: block; margin-bottom: 16rpx; }
+.detail-desc { font-size: 28rpx; color: #a0a0b0; line-height: 1.7; display: block; }
+.features-grid { display: flex; flex-wrap: wrap; gap: 16rpx; }
+.feature-item { padding: 12rpx 24rpx; background: rgba(100, 255, 218, 0.08); border-radius: 30rpx; border: 1px solid rgba(100, 255, 218, 0.15); }
+.feature-text { font-size: 26rpx; color: #64ffda; }
+.pricing-box { background: rgba(255, 215, 0, 0.08); border: 1px solid rgba(255, 215, 0, 0.15); border-radius: 16rpx; padding: 24rpx; }
+.pricing-text { font-size: 28rpx; color: #ffd700; }
+.tags-row { display: flex; flex-wrap: wrap; gap: 12rpx; }
+.tag-cat { font-size: 24rpx; padding: 8rpx 20rpx; border-radius: 20rpx; }
+.action-bar { display: flex; gap: 20rpx; padding: 30rpx; padding-bottom: 60rpx; position: sticky; bottom: 0; background: linear-gradient(to top, #0f0f1a 80%, transparent); }
+.action-btn { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6rpx; padding: 20rpx 0; border-radius: 16rpx; background: #1a1a2e; border: 1px solid rgba(255,255,255,0.08); }
+.action-btn.active { border-color: #ff6b6b; background: rgba(255, 107, 107, 0.1); }
+.collect-btn.active .action-text { color: #ff6b6b; }
+.copy-btn .action-text, .visit-btn .action-text { color: #e6e6e6; }
+.action-icon { font-size: 40rpx; }
+.action-text { font-size: 22rpx; color: #8892b0; }
+.visit-btn { background: linear-gradient(135deg, #64ffda, #00b4d8); border: none; }
+.visit-btn .action-text { color: #0f0f1a; font-weight: 600; }

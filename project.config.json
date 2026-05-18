@@ -1,0 +1,14 @@
+{
+  "description": "AI导航聚合站小程序",
+  "packOptions": {"ignore": []},
+  "setting": {
+    "bundle": false, "urlCheck": true, "es6": true,
+    "postcss": true, "minified": true, "nodeModules": false,
+    "enableEngineNative": false, "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.25.3",
+  "appid": "wxxxxxxxxxxx",
+  "projectname": "ai-nav-miniprogram",
+  "condition": {}
+}

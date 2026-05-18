@@ -1,0 +1,62 @@
+<view class="container">
+  <view class="header">
+    <view class="logo-area">
+      <text class="logo-text">🤖 AI导航</text>
+      <text class="logo-sub">发现优质AI工具</text>
+    </view>
+  </view>
+  <view class="search-bar" bindtap="goToSearch">
+    <image class="search-icon" src="/assets/icons/search.png" mode="aspectFit" />
+    <text class="search-placeholder">搜索AI工具...</text>
+  </view>
+  <swiper class="banner-swiper" indicator-dots autoplay circular interval="3000" bindchange="onBannerChange">
+    <swiper-item wx:for="{{banners}}" wx:key="id">
+      <view class="banner-item" style="background: linear-gradient(135deg, {{item.color}}88, {{item.color}}44)">
+        <text class="banner-title">{{item.title}}</text>
+        <text class="banner-sub">{{item.subtitle}}</text>
+      </view>
+    </swiper-item>
+  </swiper>
+  <view class="section-title">📂 分类浏览</view>
+  <scroll-view class="category-scroll" scroll-x enable-flex>
+    <view class="category-grid">
+      <view class="category-item" wx:for="{{categories}}" wx:key="id" bindtap="goToCategory" data-id="{{item.id}}" data-name="{{item.name}}">
+        <view class="category-icon" style="background:{{item.color}}22;color:{{item.color}}">{{item.icon}}</view>
+        <text class="category-name">{{item.name}}</text>
+        <text class="category-count">{{item.count}}个</text>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="section-title">⭐ 精选推荐</view>
+  <view class="tools-grid">
+    <view class="tool-card" wx:for="{{featuredTools}}" wx:key="id" bindtap="goToDetail" data-id="{{item.id}}">
+      <view class="tool-top">
+        <image class="tool-logo" src="{{item.logo}}" mode="aspectFit" binderror="onImgErr" />
+        <view class="tool-badges">
+          <text class="tag tag-primary" wx:if="{{item.free}}">免费</text>
+          <text class="tag tag-secondary" wx:if="{{item.chinese}}">中文</text>
+        </view>
+      </view>
+      <text class="tool-name">{{item.name}}</text>
+      <text class="tool-desc">{{item.shortDesc}}</text>
+      <view class="tool-footer">
+        <text class="tool-cat" style="color:{{item.catColor}}">{{item.category}}</text>
+        <view class="tool-rating"><text class="star">⭐</text><text>{{item.rating}}</text></view>
+      </view>
+    </view>
+  </view>
+  <view class="section-title">🔥 热门工具</view>
+  <view class="hot-list">
+    <view class="hot-item" wx:for="{{hotTools}}" wx:key="id" bindtap="goToDetail" data-id="{{item.id}}">
+      <view class="hot-left">
+        <text class="hot-rank" style="color:{{index<3?'#ffd700':'#8892b0'}}">{{index+1}}</text>
+        <image class="hot-logo" src="{{item.logo}}" mode="aspectFit" />
+        <view class="hot-info">
+          <text class="hot-name">{{item.name}}</text>
+          <text class="hot-cat" style="color:{{item.catColor}}">{{item.category}}</text>
+        </view>
+      </view>
+      <view class="hot-right"><text class="hot-users">{{item.users}}人在用</text></view>
+    </view>
+  </view>
+</view>

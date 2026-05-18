@@ -1,0 +1,31 @@
+.search-bar { display: flex; align-items: center; gap: 16rpx; padding: 20rpx 30rpx; background: #1a1a2e; }
+.search-input { flex: 1; background: #16213e; border-radius: 50rpx; padding: 18rpx 30rpx; font-size: 28rpx; color: #e6e6e6; border: 1px solid rgba(100, 255, 218, 0.2); }
+.ph { color: #8892b0; }
+.search-btn { font-size: 28rpx; color: #64ffda; font-weight: 600; }
+.history-section { padding: 20rpx 30rpx; }
+.section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16rpx; }
+.section-title { font-size: 28rpx; font-weight: 600; color: #e6e6e6; }
+.clear-btn { font-size: 24rpx; color: #8892b0; }
+.history-list { display: flex; flex-wrap: wrap; gap: 16rpx; }
+.history-item { padding: 12rpx 24rpx; background: #1a1a2e; border-radius: 30rpx; font-size: 26rpx; color: #a0a0b0; border: 1px solid rgba(255,255,255,0.08); }
+.hot-section { padding: 20rpx 30rpx; }
+.hot-list { display: flex; flex-wrap: wrap; gap: 16rpx; margin-top: 14rpx; }
+.hot-item { padding: 14rpx 28rpx; background: linear-gradient(135deg, rgba(100,255,218,0.1), rgba(0,180,216,0.1)); border-radius: 30rpx; font-size: 26rpx; color: #64ffda; border: 1px solid rgba(100, 255, 218, 0.2); }
+.cat-section { padding: 20rpx 30rpx; }
+.cat-grid { display: flex; flex-wrap: wrap; gap: 16rpx; margin-top: 14rpx; }
+.cat-item { display: flex; align-items: center; gap: 10rpx; padding: 14rpx 24rpx; background: #1a1a2e; border-radius: 16rpx; border: 1px solid rgba(255,255,255,0.08); }
+.cat-icon { font-size: 28rpx; }
+.cat-name { font-size: 26rpx; color: #e6e6e6; }
+.result-list { padding: 20rpx 30rpx; }
+.result-item { display: flex; gap: 24rpx; padding: 24rpx 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.result-logo { width: 80rpx; height: 80rpx; border-radius: 18rpx; background: #1a1a2e; flex-shrink: 0; }
+.result-info { flex: 1; min-width: 0; }
+.result-name { font-size: 30rpx; font-weight: 600; color: #e6e6e6; display: block; }
+.result-desc { font-size: 24rpx; color: #8892b0; display: block; margin-top: 6rpx; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.result-meta { display: flex; align-items: center; gap: 16rpx; margin-top: 8rpx; }
+.result-cat { font-size: 22rpx; }
+.result-rating { font-size: 22rpx; color: #ffd700; }
+.no-result { display: flex; flex-direction: column; align-items: center; padding: 100rpx 0; gap: 16rpx; }
+.no-result-icon { font-size: 80rpx; }
+.no-result-text { font-size: 30rpx; color: #e6e6e6; }
+.no-result-hint { font-size: 24rpx; color: #8892b0; }

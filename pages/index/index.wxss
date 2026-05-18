@@ -1,0 +1,38 @@
+.header { padding: 30rpx 30rpx 10rpx; background: linear-gradient(135deg, #1a1a2e, #16213e); }
+.logo-area { display: flex; flex-direction: column; }
+.logo-text { font-size: 48rpx; font-weight: 700; color: #64ffda; }
+.logo-sub { font-size: 24rpx; color: #8892b0; margin-top: 6rpx; }
+.search-bar { margin: 20rpx 30rpx 10rpx; background: #1a1a2e; border-radius: 50rpx; padding: 20rpx 30rpx; display: flex; align-items: center; border: 1px solid rgba(100, 255, 218, 0.2); }
+.search-icon { width: 36rpx; height: 36rpx; margin-right: 16rpx; opacity: 0.5; }
+.search-placeholder { font-size: 28rpx; color: #8892b0; }
+.banner-swiper { margin: 20rpx 30rpx; height: 200rpx; border-radius: 16rpx; overflow: hidden; }
+.banner-item { height: 200rpx; display: flex; flex-direction: column; justify-content: center; padding: 30rpx; border-radius: 16rpx; }
+.banner-title { font-size: 40rpx; font-weight: 700; color: #fff; }
+.banner-sub { font-size: 26rpx; color: rgba(255,255,255,0.8); margin-top: 10rpx; }
+.section-title { font-size: 32rpx; font-weight: 600; color: #e6e6e6; padding: 30rpx 30rpx 10rpx; }
+.category-scroll { white-space: nowrap; }
+.category-grid { display: inline-flex; padding: 0 30rpx; gap: 20rpx; }
+.category-item { display: flex; flex-direction: column; align-items: center; min-width: 140rpx; }
+.category-icon { width: 90rpx; height: 90rpx; border-radius: 20rpx; display: flex; align-items: center; justify-content: center; font-size: 44rpx; }
+.category-name { font-size: 24rpx; color: #e6e6e6; margin-top: 10rpx; }
+.category-count { font-size: 20rpx; color: #8892b0; }
+.tools-grid { display: flex; flex-wrap: wrap; padding: 0 20rpx; gap: 20rpx; }
+.tool-card { width: calc(50% - 20rpx); background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 16rpx; padding: 24rpx; border: 1px solid rgba(100, 255, 218, 0.08); box-sizing: border-box; }
+.tool-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14rpx; }
+.tool-logo { width: 72rpx; height: 72rpx; border-radius: 16rpx; background: #0f0f1a; }
+.tool-badges { display: flex; flex-wrap: wrap; justify-content: flex-end; max-width: 120rpx; }
+.tool-name { font-size: 28rpx; font-weight: 600; color: #e6e6e6; display: block; }
+.tool-desc { font-size: 22rpx; color: #8892b0; display: block; margin-top: 8rpx; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tool-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 14rpx; }
+.tool-cat { font-size: 20rpx; }
+.tool-rating { display: flex; align-items: center; gap: 4rpx; font-size: 22rpx; color: #ffd700; }
+.star { font-size: 20rpx; }
+.hot-list { padding: 0 30rpx; }
+.hot-item { display: flex; justify-content: space-between; align-items: center; padding: 20rpx 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.hot-left { display: flex; align-items: center; gap: 20rpx; }
+.hot-rank { font-size: 32rpx; font-weight: 700; min-width: 40rpx; }
+.hot-logo { width: 64rpx; height: 64rpx; border-radius: 14rpx; background: #1a1a2e; }
+.hot-info { display: flex; flex-direction: column; gap: 6rpx; }
+.hot-name { font-size: 28rpx; font-weight: 500; color: #e6e6e6; }
+.hot-cat { font-size: 22rpx; }
+.hot-users { font-size: 22rpx; color: #8892b0; }

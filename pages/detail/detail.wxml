@@ -1,0 +1,35 @@
+<view class="container" wx:if="{{tool}}">
+  <view class="detail-header">
+    <image class="detail-logo" src="{{tool.logo}}" mode="aspectFit" binderror="onImgErr" />
+    <view class="header-info">
+      <text class="detail-name">{{tool.name}}</text>
+      <view class="detail-badges">
+        <text class="tag tag-primary" wx:if="{{tool.free}}">免费</text>
+        <text class="tag tag-secondary" wx:if="{{tool.chinese}}">中文</text>
+        <text class="tag" style="background:rgba(0,180,216,0.15);color:#00b4d8" wx:if="{{!tool.free}}">付费</text>
+      </view>
+      <view class="detail-rating"><text class="stars">⭐⭐⭐⭐⭐</text><text class="rating-num">{{tool.rating}}</text><text class="rating-users">{{tool.users}}人在用</text></view>
+    </view>
+  </view>
+  <view class="detail-section"><text class="section-title">📝 简介</text><text class="detail-desc">{{tool.description}}</text></view>
+  <view class="detail-section">
+    <text class="section-title">✨ 功能特性</text>
+    <view class="features-grid"><view class="feature-item" wx:for="{{tool.features}}" wx:key="index"><text class="feature-text">{{item}}</text></view></view>
+  </view>
+  <view class="detail-section"><text class="section-title">💰 定价</text><view class="pricing-box"><text class="pricing-text">{{tool.pricing}}</text></view></view>
+  <view class="detail-section">
+    <text class="section-title">🏷️ 分类</text>
+    <view class="tags-row">
+      <text class="tag tag-cat" style="background:{{tool.catColor}}22;color:{{tool.catColor}}">{{tool.category}}</text>
+      <text class="tag" wx:for="{{tool.tags}}" wx:key="index" style="background:rgba(149,117,205,0.15);color:#c792ea">{{item}}</text>
+    </view>
+  </view>
+  <view class="action-bar">
+    <view class="action-btn collect-btn {{collected ? 'active' : ''}}" bindtap="toggleCollect">
+      <text class="action-icon">{{collected ? '❤️' : '🤍'}}</text>
+      <text class="action-text">{{collected ? '已收藏' : '收藏'}}</text>
+    </view>
+    <view class="action-btn copy-btn" bindtap="copyUrl"><text class="action-icon">📋</text><text class="action-text">复制链接</text></view>
+    <view class="action-btn visit-btn" bindtap="openUrl"><text class="action-icon">🚀</text><text class="action-text">访问网站</text></view>
+  </view>
+</view>
